@@ -1,4 +1,4 @@
-# Batch Writer Version 1.0 Beta 1
+# Batch Writer Version 1.0 Beta 2
 
 
 ## ソフトウェア詳細
@@ -14,6 +14,9 @@
 |動作条件|Windows 64ビット、Windows HTML Applicationが動作する環境|
 |動作確認条件|Windows 10 2004 Home 64bit|
 |ライセンス|[Apache License 2.0](https://www.apache.org/licenses/)|
+|公式？HP | http://ik1-426-45225.vs.sakura.ne.jp/project/b01btwr/ |
+
+なお、HPは現在「仮」HPとなっております。そのうちGitHubからこのプロジェクトを消し去ってHPに移行すると思います。
 
 ## このソフトウェアでできること
 ### Windows バッチファイルの記述
