@@ -1,18 +1,19 @@
-# Batch Writer Version 1.0 Beta 2
+# Batch Writer Version 1.0 Beta 4
 
 
 ## ソフトウェア詳細
 |項目|情報|
 |:-|:-|
 |ソフト名|Batch Writer|
-|バージョン|1.0 Beta 2|
+|バージョン|1.0 Beta 4|
 |開発者|[Sorakime](https://sorakime.theblog.me/)|
-|初版リリース日|2020年8月19日|
+|初版リリース日|2020年8月22日|
 |初期バージョン|バージョン1.0 Beta 1|
 |リリース日|2020年8月20日|
-|リリース段階|初期ベータ版、ステップ2/3|
+|リリース段階|完成期ベータ版、ステップ1/2|
 |動作条件|Windows 64ビット、Windows HTML Applicationが動作する環境|
-|動作確認条件|Windows 10 2004 Home 64bit|
+|動作保証条件|Windows 10 1809 Home 64ビット以上|
+|動作確認条件|Windows 10 2004 Home 64ビット|
 |ライセンス|[Apache License 2.0](https://www.apache.org/licenses/)|
 |公式？HP | http://ik1-426-45225.vs.sakura.ne.jp/project/b01btwr/ |
 
@@ -37,11 +38,11 @@
 ### アップデーターの追加
 現在は手動で最新版をダウンロードして更新しないといけないため、大変手間がかかります。
 ですが近くのうちにアップデーター・アップデート確認機能を追加したいと思っています。
-これはバージョン1.0 Beta 3で実装します。
+これはバージョン1.0 Beta 3で実装します。ごめんなさい嘘ですまだ実装できていません。許してください！！！予想以上にてこずりました(´・ω・`)
 ### シンタックスハイライト機能
 現在はtextareaでの実装ですから白い背景に黒い文字という素朴で殺風景なものに仕上がっていますが、見やすくするために近いうちにはシンタックスハイライト機能の追加を検討しています。
 HTMLやCSS、JavaScript、JScriptやVBScriptでの実装方法を知っている方は教えてください。
 現在はHTMLとJavaScriptだけでの実装を検討しております。
 
 HP:http://ik1-426-45225.vs.sakura.ne.jp/project/b01btwr/
-Mail:iztob35690 : yahoo.co.jp (: = @)
+Mail:iztob35690:yahoo.co.jp (:->@)
