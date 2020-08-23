@@ -8,7 +8,7 @@
 |バージョン|1.0 Beta 4|
 |開発者|[Sorakime](https://sorakime.theblog.me/)|
 |初版リリース日|2020年8月22日|
-|初期バージョン|バージョン1.0 Beta 1|
+|初期バージョン|1.0 Beta 1|
 |リリース日|2020年8月20日|
 |リリース段階|完成期ベータ版、ステップ1/2|
 |動作条件|Windows 64ビット、Windows HTML Applicationが動作する環境|
