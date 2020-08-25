@@ -1,4 +1,4 @@
-# Batch Writer Version 1.0 Beta 4
+# Batch Writer Version 1.0.1
 
 
 ## ソフトウェア詳細
