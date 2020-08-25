@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&family=Source+Code+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+textarea{
+  font-family: 'Source Code Pro',sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #ebebeb;
+}
+*{
+  color: #d9d9d9;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'Noto Sans JP',"源ノ角ゴシック","源ノ角ゴシック JP",'Noto Sans JP CJK','Noto Sans','Source Code Pro',sans-serif;
+}
