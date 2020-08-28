@@ -1,15 +1,15 @@
-# Batch Writer Version 1.0.2
+# Batch Writer Version 1.0.3
 
 
 ## ソフトウェア詳細
 |項目|情報|
 |:-|:-|
 |ソフト名|Batch Writer|
-|バージョン|1.0.2|
+|バージョン|1.0.3|
 |開発者|[Sorakime](https://sorakime.theblog.me/)|
 |初版リリース日|2020年8月20日|
 |初期バージョン|1.0 Beta 1|
-|リリース日|2020年8月26日|
+|リリース日|2020年8月28日|
 |リリース段階|正式版|
 |動作条件|Windows 64ビット、Windows HTML Applicationが動作する環境|
 |動作保証条件|Windows 10 1809 Home 64ビット以上|
