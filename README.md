@@ -14,7 +14,7 @@
 |動作条件|Windows 64ビット、Windows HTML Applicationが動作する環境|
 |動作保証条件|Windows 10 1809 Home 64ビット以上|
 |動作確認条件|Windows 10 2004 Home 64ビット|
-|ライセンス|[Apache License 2.0](https://www.apache.org/licenses/)|
+|ライセンス|monochrome License. v.1.0|
 |HP| http://ik1-426-45225.vs.sakura.ne.jp/project/b01btwr/|
 |monochrome Project.|http://ik1-426-45225.vs.sakura.ne.jp/project/b02mncr/|
 
