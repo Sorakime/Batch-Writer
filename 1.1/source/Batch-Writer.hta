@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; URL=Batch-Writer-1.1.hta">
+    <Hta:Application
+      APPLICATIONNAME="Batch Writer by monochrome."
+      VERSION="1.1"
+      INNERBORDER="no"
+      SCROLLFLAT="yes"
+      ICON="icon.ico"
+      SCROLL="no"
+      SHOWINTASKBAR="yes"
+      SINGLEINSTANCE="yes"
+    />
+    <script type="text/javascript">
+      document.oncontextmenu=function(){return false;}
+    </script>
+    <title>Starting Batch Writer by monochrome.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      Starting Batch Writer by monochrome.
+      Version 1.1
+    </div>
+    <style media="screen">
+    *{
+      font-family: 'Noto Sans JP';
+    }
+    div{
+      display: inline-block;
+      position: fixed;
+      bottom: 0;
+      padding: 0 35%;
+    }
+    </style>
+  </body>
+</html>
