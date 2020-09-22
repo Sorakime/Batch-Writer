@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; URL=Batch-Writer-1.1.2.hta">
+    <HTA:Application
+      APPLICATIONNAME="Batch Writer by monochrome."
+      VERSION="1.1.2"
+      INNERBORDER="no"
+      SCROLLFLAT="yes"
+      ICON="icon.ico"
+      SCROLL="no"
+      SHOWINTASKBAR="yes"
+      SINGLEINSTANCE="yes"
+    />
+    <script type="text/javascript">
+      document.oncontextmenu=function(){return false;}
+    </script>
+    <title>Starting Batch Writer by monochrome.</title>
+  </head>
+  <body>
+    <div>
+      Starting Batch Writer by monochrome.
+      Version 1.1.2(12)
+    </div>
+    <style media="screen">
+    *{
+      cursor: default;
+      font-family: sans-serif;
+    }
+    div{
+      display: inline-block;
+      position: fixed;
+      top: 45%;
+      bottom: 45%;
+      left: 30%;
+    }
+    </style>
+    <script type="text/jscript">
+      window.resizeTo(1000,700);
+    </script>
+  </body>
+</html>

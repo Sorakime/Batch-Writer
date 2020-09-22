@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <HTA:Application applicationname="Batch Writer" version="1.1.2" />
+    <link rel="stylesheet" href="font-face.css">
+    <link rel="stylesheet" href="window.css">
+    <title id="title">Batch Writer by monochrome.</title>
+    <script src="shortcut.js" charset="utf-8"></script>
+    <script type="text/javascript">document.body.oncontextmenu=function(){return false;}</script>
+  </head>
+  <body>
+    <nav>
+      <a href="#" onclick="openfile();">ファイルを開く</a>
+      <a href="#" onclick="create();">ファイルを作る</a>
+      <a href="#" onclick="savesource();">保存</a>
+      <a href="#" onclick="exec();">コマンドプロンプト</a>
+	    <a href="#" onclick="alert('Batch Writer 1.1.2(12)\n\n\nCopyright 2020 Sorakime\nmonochrome. Licenseのもとで公開されています。\nリリース日：2020年9月12日(土曜日)');">このソフトウェアについて</a>
+      <a href="#" onclick="location.reload(true);" class="reload">再読み込み</a>
+    </nav>
+    <header>
+      <a href="#" onclick="openfile();">ファイルを開く</a>
+      <a href="#" onclick="create();">ファイルを作る</a>
+      <a href="#" onclick="savesource();">保存</a>
+      <a href="#" onclick="exec();">コマンドプロンプト</a>
+	    <a href="#" onclick="confirm('Batch Writer 1.1.2(12)\n\n\nCopyright 2020 Sorakime.\nmonochrome. Licenseのもとで公開されています。\nリリース日：2020年9月12日(土曜日)');">このソフトウェアについて</a>
+      <a href="#" onclick="location.reload(true);" class="reload">再読み込み</a>
+    </header>
+    <span id="ta">
+      <textarea id="sourceform" autofocus>@echo off
+
+</textarea>
+  <script type="text/javascript"></script>
+    </span>
+    <aside>
+      <div id="ascontents">
+        <h1>Windows バッチ・ファイル辞典</h1>
+        <div id="ascontents2">
+          <span id="helpcontents">
+            <div onclick="help1();">必須項目</div>
+            <div onclick="help2();">文字の出力</div>
+            <div onclick="help3();">変数の設定</div>
+            <div onclick="help4();">ifでの条件分岐</div>
+            <div onclick="help5();">gotoでの条件分岐</div>
+            <div onclick="help6();">forでのループ</div>
+            <div onclick="help7();">引数を扱う</div>
+            <div onclick="help8();">画面の内容を消去する</div>
+            <div onclick="help9();">ウィンドウのタイトルを変更する</div>
+            <div onclick="help10();">ほかのファイルを呼び出す</div>
+            <div onclick="help11();">ディレクトリを表示する</div>
+          </span>
+        </div>
+      </div>
+    </aside>
+    <script type="text/jscript" src="typing.js" charset="utf-8"></script>
+    <script type="text/jscript" src="menu.js" charset="utf-8"></script>
+    <script src="help.js" charset="utf-8"></script>
+  </body>
+</html>
