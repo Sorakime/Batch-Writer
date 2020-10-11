@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Batch Writer for Developers. v.2.0 ヘルプ - リリースノート</title>
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+  </head>
+  <body>
+    <header>
+      <h1>Batch Writer for Developers. v.2.0 ヘルプ</h1>
+      <h2>リリースノート(特徴)</h2>
+    </header>
+    <main>
+      <h3>リリースノート(特徴)</h3>
+      <ul>
+        <li>完全に一から作り直した。</li>
+        <li>白と黒のツートンカラーに変更した。</li>
+        <li>左にディレクトリを表示できるようにした。</li>
+        <li>ファイルの選択をエクスプローラっぽい画面で行えるようにした。</li>
+        <li>ファイルを開いたり保存したりはできないので張りぼて状態。</li>
+        <li>開発者向け版なのでアイコンを青っぽい色に変更した。</li>
+      </ul>
+      <div>
+        <br>
+        <h3>完全に一から作り直した。</h3>
+        <p>起動するとすぐにわかります。前よりも、白いです。また、前よりもナビゲーションバーの項目が少ないです。</p>
+        <p>そして、左にCドライブの内容が表示されています。以前のV.1.1.2などとは違います。少しだけv.1.0 Beta1に似てきたように思えます。</p>
+        <p>ちなみに来年一月に公開予定のv.2.0の正式版のリリースに向けての準備として公開させていただいております。</p>
+        <br>
+        <h3>白と黒のツートンカラーに変更した。</h3>
+        <p>これも見た目が大きいですが、実のことを言うと左のディレクトリ表示がiframeで実装しているのでHTMLファイルのスタイルシートを勝手にいじれないという理由があって左を白にしていたりします。</p>
+        <p>それと、右のエディタに前のv.1.1.2などから受け継いで黒いフォームに白い文字にしています。</p>
+        <br>
+        <h3>左にディレクトリを表示できるようにした。</h3>
+        <p>見たらすぐにわかります。</p>
+        <p>一応事実として、左のところはiframeで実装しており、またその中にもiframeでディレクトリを表示しています。将来的にはD&Dで開けるようにしたいと思っております。</p>
+        <br>
+        <h3>ファイルの選択をエクスプローラっぽい画面で行えるようにした。</h3>
+        <p>ファイルの選択を押してみてください。エクスプローラっぽい小さめのウィンドウが開きましたよね。</p>
+        <p>これを実装しました。inputのfileをlabelでどうのこうのして実装しました。自分でもいまいちlabel要素が理解できてませんけどね。。。</p>
+        <br>
+        <h3>ァイルを開いたり保存したりはできないので張りぼて状態。</h3>
+        <p>デザインを体験してもらうために開発したものですので、正常には動作しません。強いて言うなら左のディレクトリ表示画面でファイルを作ったり消したり、ほかのエディタで見ることくらいです。</p>
+        <p>実質的に今は縦長いところでファイルを操作するだけのソフトでおまけに入力欄があってっていうソフトになっているので、使い物にはなりません。ですので今回はインストーラを用意いたしませんんでご了承ください。</p>
+        <br>
+        <h3>開発者向け版なのでアイコンを青っぽい色に変更した。</h3>
+        <p>すぐに通常版と開発者向けバージョンの見分けができるように、青っぽいアイコンに変更しました。</p>
+        <p>ちなみにペンのところ以外は全部PhotoScapeで一から作り直しています。</p>
+        <p>以下、色のついていないSVGファイルです。(backgroundでbase64で埋め込んでいるため、中央に表示されている)</p>
+        <span></span>
+      </div>
+      <a href="wibtwr.html">ソフトウェアについて</a><br>
+      <a href="wbdic.html">Windows バッチ・ファイル辞典</a><br>
+      <a href="lvds.html">最新バージョンのダウンロード</a>
+    </main>
+
+    <span>
+      <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100,500');
+      *{
+        margin: 0; padding: 0;
+        font-family: 'Noto Sans JP',sans-serif;
+        font-weight: 100;
+      }
+      header{
+        padding: 2px 5px 2px 5px;
+        box-shadow: 0px 5px 15px #ababab;
+      }
+      main{
+        margin: 15px 5px 2px 5px;
+      }
+      table, table *{
+        text-align: left;
+      }
+      tr > th, tr > td{
+        padding-right: 10px;
+      }
+      thead *{
+        font-weight: 500;
+      }
+      ul{
+        padding-left: 20px;
+      }
+      div > span{
+        display: block;
+        height: 100px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: left;
+        color: #213487;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAyMDAxMDkwNC8vRU4iDQogImh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLVNWRy0yMDAxMDkwNC9EVEQvc3ZnMTAuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciDQogd2lkdGg9IjEwODAuMDAwMDAwcHQiIGhlaWdodD0iMTA4MC4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDEwODAuMDAwMDAwIDEwODAuMDAwMDAwIg0KIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPg0KDQo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwxMDgwLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSINCmZpbGw9IiMwMDAwMDAiIHN0cm9rZT0ibm9uZSI+DQo8cGF0aCBkPSJNMTg4NSA4NDM5IGMtMjk4IC00NCAtNTM3IC0yNTcgLTYxMCAtNTQ0IGwtMjUgLTk4IDAgLTIzOTcgMCAtMjM5Nw0KMjUgLTk4IGM2NCAtMjU1IDI2MiAtNDUzIDUyMyAtNTI4IGw3NyAtMjIgMjg2OCAtMyAyODY3IC0yIDEgLTgzIGMxIC00NSAyDQotMTA0IDQgLTEzMiAxIC0yNyAzIC03MyA0IC0xMDEgMiAtOTMgMTggLTg0IDIyMSAxMjYgbDE4MSAxODkgNDUyIDMgYzQyMyA0DQo0NTcgNiA1MjkgMjUgMjQ1IDY5IDQ0MiAyNTcgNTE3IDQ5NyBsMjYgODEgNSA5ODUgNSA5ODUgMjk5IDc3NSBjMjA4IDU0MiAyOTgNCjc4NiAyOTggODEzIC0xIDcyIC0xNCA4MCAtMzE4IDE5NiBsLTI3OSAxMDcgLTMgODIgYy0zIDgyIC0zIDgyIDIwIDczIDM0Nw0KLTEzNiA2MDUgLTIzMSA2MjUgLTIzMSA0OCAwIDc2IDQ4IDE2MSAyNzIgOTMgMjQ2IDk3IDI2MiA4MiAyOTggLTE0IDM0IDEgMjcNCi00ODUgMjE0IGwtNDAwIDE1MyAtNiA3OSBjLTI1IDMyMSAtMjM2IDU3OCAtNTQ3IDY2NyBsLTc3IDIyIC0zNDkwIDEgYy0xOTQ3DQoxIC0zNTE2IC0yIC0zNTUwIC03eiBtMTA2OCAtMTAyMCBsNjg3IC0yNjMgMCAtMTYxIDAgLTE2MCAtNjkyIC0yNjUgYy0zODANCi0xNDYgLTY5NCAtMjY0IC02OTcgLTI2MiAtMyAxIC02IDg2IC02IDE4OCBsMCAxODYgNDQ5IDE0OSBjMjQ2IDgyIDQ1NSAxNTMNCjQ2MyAxNTggMTEgNiAtMjAgMjEgLTEwMyA1MCAtMTAxIDM2IC02NDEgMjE1IC03NjkgMjU1IGwtNDAgMTMgLTMgMTkyIGMtMg0KMTUzIDAgMTkyIDEwIDE4OSA3IC0zIDMyMiAtMTI0IDcwMSAtMjY5eiBtMjI1NyAtMTcxOSBsMCAtMTMwIC03MTUgMCAtNzE1IDANCjAgMTMwIDAgMTMwIDcxNSAwIDcxNSAwIDAgLTEzMHoiLz4NCjwvZz4NCjwvc3ZnPg0K');
+      }
+      </style>
+    </span>
+  </body>
+</html>

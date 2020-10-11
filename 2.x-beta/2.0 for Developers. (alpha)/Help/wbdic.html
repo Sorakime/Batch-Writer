@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Batch Writer for Developers. v.2.0 ヘルプ - Windows バッチ・ファイル辞典</title>
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+  </head>
+  <body>
+    <header>
+      <h1>Batch Writer for Developers. v.2.0 ヘルプ</h1>
+      <h2>Windows バッチ・ファイル辞典</h2>
+    </header>
+    <main>
+      <h3>Windows バッチ・ファイル辞典</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>情報</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>必須項目</td>
+            <td>知っていると思いますが、Windows Bat(cmd)ファイルを作るときは、必ず最初に<br><code>@echo off</code><br>と入力しておきましょう。<br>いちいち実行コマンドがプロンプトに表示されるためです。</td>
+          </tr>
+          <tr>
+            <td>文字の出力</td>
+            <td>文字を出力するときには、bashと同様に<br><code>echo</code><br>を使用します。そのあとにクォーテーションなしで入力します。これには変数も設定できますが、<br><code>%</code><br>で変数名を挟む必要があります。</td>
+          </tr>
+          <tr>
+            <td>変数の設定</td>
+            <td>変数を設定するには、Apple Scriptと同様<br><code><var>set 変数名=文字列</var></code><br>とします。クォーテーションは必要ありません。計算した結果も代入できますし、日本語などの文字列も問題なく代入可能です。</td>
+          </tr>
+          <tr>
+            <td>ifでの条件分岐</td>
+            <td>条件分岐をするとき、基本は<br><code>if文</code><br>を使用します。以下のように書くことができます。<br><code>if 条件 (真のときに動かすコマンド) else (偽の時に行うコマンド)</code><br>となります。JavaScriptなどとは少し違う書き方をします。<br>説明が長いので詳細はネットで</td>
+          </tr>
+          <tr>
+            <td>gotoでの条件分岐</td>
+            <td>もう一つの条件分岐やループとして、<br><code>goto</code><br>を使用します。Go Toキャンペーンではないです。まぁGo Toの意味ですけど。<br>これはラベル(:から始まるやつ)と組み合わせて使用し、<br><code>:label<br>echo label test<br> goto :label</code><br>というように使用します。</td>
+            <td>(編集時に気が付いた、GoTo[ト]ラベル)</td>
+          </tr>
+          <tr>
+            <td>forでのループ</td>
+            <td>ループをするには、基本として<br><code>for文</code><br>を使用します。<br>for文の書式は、<br>
+              <pre><code>for /オプション <var>%%アルファベット1つ</var> in (ループの対象) do (
+  ループ中に行うコマンド
+)</code></pre><br>
+            というようになります。結構ややこしいので、開発者は基本goto文のほうを多めに使ってますが、ファイルなどの操作の場合にfor文を重宝します。</td>
+          </tr>
+          <tr>
+            <td>引数を扱う</td>
+            <td>ここでは、引数を扱う方法を記述して言います。<br>引数は、第一引数(起動するためのパス)で<br><code>%~0</code><br>となり、第二引数以降も同様に0が増えていきます。<br>これは変数として扱うことができます。</td>
+          </tr>
+          <tr>
+            <td>画面の内容を消去する</td>
+            <td>表示されている画面をクリアするには、<br><code>cls</code><br>を使用します。一度けしたプロンプトは戻すことは不可能です。</td>
+          </tr>
+          <tr>
+            <td>ウィンドウのタイトルを変更する</td>
+            <td>実行中のウィンドウのタイトル(上にある白い棒の中の文字列)を変えるには、<br><code>Title</code><br>コマンドを使用します。Titleの後には、変更したい名前を書きます。<td>
+          </tr>
+          <tr>
+            <td>ほかのファイルを呼び出す</td>
+            <td>ほかのバッチファイルを呼び出すには、<br><code>call</code><br>コマンドを使用します。具体的には、<br><code>call ドライブ:パス パラメータ</code><br>と使用します。ちなみに呼び出されたファイルに<br><code>exit</code><br>コマンドが書かれている場合、終了した後に呼び出し元のバッチファイルが実行されます。</td>
+          </tr>
+          <tr>
+            <td>ディレクトリを表示する</td>
+            <td>大体のプロンプトである、<br><code>dir</code><br>コマンド。ディレクトリを表示させます。<br>これは実際に表示させたほうが速いでしょう。WindowsキーとRを押してcmdと入力し、<br><code>dir C:\</code><br>と入力してみましょう。Cドライブの内容が表示されます。</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <a href="relno.html">リリースノート</a><br>
+      <a href="wibtwr.html">ソフトウェアについて</a><br>
+      <a href="lvds.html">最新バージョンのダウンロード</a>
+    </footer>
+
+    <span>
+      <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Source+Code+Pro&display=swap');
+      *{
+        margin: 0; padding: 0;
+        font-family: 'Noto Sans JP',sans-serif;
+        font-weight: 100;
+      }
+      header{
+        padding: 2px 5px 2px 5px;
+        box-shadow: 0px 5px 15px #ababab;
+      }
+      main{
+        margin: 15px 5px 2px 5px;
+      }
+      table, table *{
+        text-align: left;
+      }
+      tr > th, tr > td{
+        padding-right: 10px;
+      }
+      td, th {
+        display: inline-block;
+        text-align: left;
+        width: 500px;
+        margin-bottom: 2em;
+      }
+      thead *{
+        font-weight: 500;
+      }
+      code{
+        font-family: 'Source Code Pro',sans-serif;
+        background-color: #333;
+        padding: 5px;
+        color: #eee;
+        border-radius: 3px;
+      }
+      </style>
+    </span>
+  </body>
+</html>

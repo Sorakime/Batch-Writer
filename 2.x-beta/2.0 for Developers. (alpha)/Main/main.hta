@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript">document.oncontextmenu=function(){return false;}</script>
+    <title id="title">Batch Writer for Developers.</title>
+  </head>
+  <body>
+    <header>
+      <!--File button-->
+      <label for="filebtn" onclick="fileopen();">
+        ファイル選択
+        <input type="file" id="filebtn" accept=".hta,text/html,.htm" style="display: none;">
+      </label>
+      <a href="#" onclick="confirm('Batch Writer for Developers. v.2.0\n2020年10月20日公開\nBatch Writerはmonochrome Project.の一環です\nα段階のリリース\n\nmonochrome. LicenseのもとでSorakimeが開発、公開しております。')">バージョン</a>
+    </header>
+    <main>
+      <!--dir-viewer-->
+      <iframe src="viewer.html"></iframe>
+      <!--Editor-->
+      <textarea id="mainform">@echo off
+
+</textarea>
+
+    </main>
+    <script src="files.js" charset="utf-8"></script>
+  </body>
+</html>

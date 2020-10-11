@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>file viewer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100">
+  </head>
+  <body>
+    <input type="text" value="C:/" id="pathinput" placeholder="パスを入力">
+    <button onclick="chdir();">完了</button>
+    <iframe id="dirframe" src="C:/"></iframe>
+    <style media="screen">
+    *{
+      margin: 0; padding: 0; border: 0;
+      font-family: 'Noto Sans JP',sans-serif;
+    }
+    body{
+      overflow: hidden;
+    }
+    input{
+      padding: 1px;
+      font-size: 25px;
+      border-bottom: 1px solid #ddd;
+      width: calc(100vw - 2px);
+    }
+    iframe{
+      height: calc(100vh - 45px);
+    }
+    </style>
+    <script type="text/javascript">
+    function chdir() {
+      document.getElementById('dirframe').setAttribute('src',  document.getElementById('pathinput').value);
+    }
+    </script>
+  </body>
+</html>
